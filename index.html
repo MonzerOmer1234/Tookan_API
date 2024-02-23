@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tookan Api</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css.map" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body  
+   
+  data-bs-spy="scroll"
+  data-bs-target="#sidebar"
+  data-offset = "0"
+  data-bs-smooth-scroll="true"
+  class="scrollspy-example-2"
+  tabindex="0"
+
+
+  >
+
+ 
+  
+ 
+    <!-- start -->
+    <div class="header position-fixed top-0 start-0 w-100 d-none d-lg-block">
+      
+ 
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-1 position-relative img">
+            <div>
+              <a href="#"
+                ><img src="images/logo.png" alt="" class="img-fluid" 
+              /></a>
+            </div>
+          </div>
+          <div class="pt-3 fw-normal col-5 col-md-3 position-relative ">
+            <div>
+              <h5 class="fw-normal">Tookan ApI</h5>
+              <p class="d-flex align-items-center ">
+                <span style="position: relative; top : -2px">Tookan</span>
+                <span class="rounded-circle d-block"></span>
+                <span style="position: relative; top : -2px">tookanapi</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-3 d-none d-lg-block position-relative ">
+               <p class=" d-flex justify-content-start align-items-center">
+                <span>Documentaion</span>
+                <span>Inspector</span>
+              </p>
+              </div>
+              <div class="col-5">
+                <div class="row align-items-center ">
+                  <div class="position-relative offset-0 offset-md-1 col-1 d-flex align-items-center w-100">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="20"
+                      style="cursor: pointer ; position :relative;top : 40px; left: 20px"
+
+                    >
+                      <g fill="none" fill-rule="evenodd">
+                        <path
+                          d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0Zm0 18.036a8.036 8.036 0 1 1 0-16.072 8.036 8.036 0 0 1 0 16.072Z"
+                          fill="#6D73A9"
+                          class="path-help"
+                        />
+                        <path
+                          d="M9.985 13.559a.876.876 0 0 0-.663.297.997.997 0 0 0-.278.707 1 1 0 0 0 .278.707.876.876 0 0 0 .663.297.88.88 0 0 0 .664-.297 1 1 0 0 0 .278-.707.998.998 0 0 0-.278-.707.877.877 0 0 0-.664-.297Zm2.183-8.388a2.648 2.648 0 0 0-.906-.547 3.232 3.232 0 0 0-1.12-.19c-.837 0-1.538.251-2.104.753-.565.502-.91 1.193-1.034 2.076l1.455.152c.057-.507.23-.918.521-1.232.29-.314.668-.471 1.134-.471a1.462 1.462 0 0 1 1.07.457 1.688 1.688 0 0 1 .442 1.155c0 .234-.041.444-.121.631a2.643 2.643 0 0 1-.307.532c-.124.167-.262.33-.414.487-.152.157-.304.312-.457.464-.19.193-.35.357-.478.494a1.92 1.92 0 0 0-.307.426 1.925 1.925 0 0 0-.171.495c-.038.182-.057.41-.057.684v.928h1.369v-.669c0-.213.01-.39.029-.532a1.41 1.41 0 0 1 .106-.388c.052-.116.124-.228.214-.335.09-.107.212-.236.364-.388l.143-.137.856-.943a3.13 3.13 0 0 0 .442-.814c.104-.289.157-.626.157-1.012 0-.446-.074-.844-.221-1.194a2.508 2.508 0 0 0-.605-.882Z"
+                          fill="#718CFF"
+                        />
+                      </g>
+                    </svg>
+                    <div class="help position-absolute d-none ">Help</div>
+                    <div class="arrow position-absolute d-none "></div>
+                    <div class="api-info d-none position-absolute z-3">
+                      <ul class="list-unstyled z-3">
+                        <li><a href="#" class=" text-decoration-none ">ApI BluePrint On StackOverflow</a></li>
+                        <li><a href="#" class=" text-decoration-none ">Apiary Docs</a></li>
+                        <li><a href="#" class=" text-decoration-none ">Contact Apiary</a></li>
+              
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="pt-3 ms-auto sign-in col-10">
+                    <h5 class="   text-end ">Apiary Powered Documentation</h5>
+                    <p class="text-end" style="font-weight : 200">
+                      <a href="#" class="text-decoration-none">Sign in</a> with Apiary
+                      account.
+                    </p>
+                  </div>
+                </div>
+                
+               
+              </div>
+              
+            
+        </div>
+    
+        </div>
+        
+    </div>
+        <div class="header-in-small mt-3 position-fixed top-0 start-0 z-100 w-100 d-lg-none" >
+          <div class="container-fluid ">
+            
+           
+            <svg xmlns="http://www.w3.org/2000/svg" class="burger-icon d-lg-none " style="position : relative; top:10px" width="80" height="40" viewBox="0"><g fill="none" fill-rule="evenodd"><g fill="#C1C6D1"><path d="M38 0H2C.9 0 0 .9 0 2v36c0 1.1.9 2 2 2h36c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 38H2V2h36v36ZM9 21h22c.55 0 1-.45 1-1s-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1Z"/><path d="M9 13h22c.55 0 1-.45 1-1s-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1ZM9 29h22c.55 0 1-.45 1-1s-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1Z"/></g><g fill="#959CAD"></svg>
+            
+           
+            </div>
+          
+            <p class="word-span  fw-bold fs-5 " style="position : fixed ; left : 20% ; top : 4%"> <span class="hyper-link green">Introduction</span> <span class="d-none right-arrow">></span> <span class="link"></span></p>
+          </div>
+      
+        </div>
+       
+        
+  
+    <!-- start content -->
+    <div class="content" style="margin-top : 200px">
+      <div class="container-fluid">
+        <div class="row page-container">
+          <div class="col-1 offset-md-0 sidebar position-fixed h-100 d-none d-lg-block " >
+            <div>
+              <div class="links d-flex justify-content-start align-items-center " style="width : 200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M8 10.846v-5.85C8 4.445 8.444 4 9 4c.552 0 1 .456 1 .995v5.939l1.523-1.371a.993.993 0 0 1 1.405.08 1 1 0 0 1-.067 1.406l-2.986 2.69a.984.984 0 0 1-.729.25 1.024 1.024 0 0 1-.298 0 .98.98 0 0 1-.625-.25l-2.987-2.69a.993.993 0 0 1-.067-1.406 1 1 0 0 1 1.406-.08L8 10.846ZM9 18A9 9 0 1 0 9 0a9 9 0 0 0 0 18Z" fill="#9AA4B2"/></svg>
+                  <div style="margin-left : 20px">
+                <a href="#" class="text-decoration-none fw-bold"
+                  >Download</a
+                >
+                <br>
+                <a href="#" class="text-decoration-none"
+                  >API Blueprint</a
+                >
+              </div>
+              </div>
+            </div>
+           
+            <nav id="sidebar" class="h-100 flex-column align-items-stretch pe-4  position-fixed   h-100">
+              
+                
+              
+              <nav class="nav nav-pills flex-column intro mt-4">
+                <a
+                  class="green text-decoration-none fw-bold text-uppercase"
+                  href="#item-1"
+                  >Introduction</a
+                >
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link p-0 my-1 head" href="#data-type"
+                    >Data Types & Response Format</a
+                  >
+                  <a class="nav-link p-0 my-1 head" href="#errors"
+                    >Error Codes</a
+                  >
+                  <a class="nav-link p-0 my-1 head" href="#timezones"
+                    >Timezones</a
+                  >
+                  <a class="nav-link p-0 my-1 head" href="#task-status"
+                    >Task Statuses</a
+                  >
+                  <a class="nav-link p-0 my-1 head" href="#custom-fields"
+                    >Custom Fields</a
+                  >
+                  <a class="nav-link p-0 my-1 head npm-module" href="#npm-module"
+                    >NPM Module</a
+                  >
+                
+                 
+                  
+                
+                
+                
+                  <a class="green text-decoration-none fw-bold text-uppercase"
+                  href="#ref"
+                  >Reference</a>
+                  <a class="nav-link p-0 my-1 head task " href="#task-title"
+                  >Task</a>
+                 
+                 
+                
+                    <nav class="nav nav-pills flex-column task-list my-2 d-none" style="border-left: 2px solid #e0e2e8;">
+                   
+                    <a class="nav-link  my-1 head task-item d-block" href="#create-task"
+                      >Create Task</a>
+                    <a class="nav-link  my-1 head task-item d-block" href="#create-mul-tasks"
+                      >Create Multiple Tasks</a>
+                    
+                    
+                  
+                  
+                </nav>
+                
+              </nav>
+            </nav>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+
+          <div class=" col-12 offset-lg-3 col-lg-4 details" style="margin-top : 50px">
+            <h1 class="position-relative fw-bold mb-3 header-title">Tookan API</h1>
+            <div
+             
+              
+             
+            >
+            <!-- start introduction -->
+              <div id="item-1" style="margin-bottom : 0">
+                <h5 class="green text-uppercase mb-4">Introduction</h5>
+                <ul>
+                  <li class="mb-3">
+                    The Tookan API is a RESTful web service for developers to
+                    programmatically interact with Tookan’s data and real-time
+                    delivery management functionality.
+                  </li>
+                  <li class="mb-3">
+                    Every bit of data exchanged between clients and the API is
+                    JSON over HTTPS.
+                  </li>
+                  <li class="mb-3">
+                    The base URL for the Tookan API is
+                    <a href="#" class="text-decoration-none"
+                      >https://api.tookanapp.com</a
+                    >
+                    , all the requests on this url use post method and we need
+                    to add the specific end points mentioned below to this URL.
+                    Example, if you want to create a task in Tookan, you will
+                    Post to the below API:
+                    <a href="#" class="text-decoration-none"
+                      >https://api.tookanapp.com/v2/create_task</a
+                    >
+                  </li>
+                  <li class="mb-3">
+                    All sample requests in this documentation are formatted for
+                    cURL.
+                  </li>
+                  <li class="mb-3">
+                    API key is mandatory in all the API's request.
+                  </li>
+                  <li class="mb-3">
+                    All parameters marked with * are mandatory otherwise
+                    optional.
+                  </li>
+                  <li class="mb-3">
+                    If you have questions about using the API, want to share
+                    some feedback, or have come across a bug you'd like to
+                    report, write us an email at contact@tookanapp.com or submit
+                    a request through our Support Center.
+                  </li>
+                  <li class="mb-3">
+                    Tookan API uses key based authentication method. You can get
+                    a key from settings(Login>Menu> <br>Keys) in your
+                    tookan account. Or
+                    <a href="#" class="text-decoration-none">click here</a> to
+                    get API key from v2 section.
+                  </li>
+                </ul>
+              </div>
+              <div id="data-type" style="margin-bottom :100px ;">
+                <h5 class="sub-title">Data Types & Response Format</h5>
+                <p>
+                  The API we have follows all the following DATATYPES and
+                  Response Formats.
+                </p>
+                <ul>
+                  <li>
+                    Throughout the api the date format we recommend is
+                    YYYY-MM-DD HH:MM:SS. Explore
+                    <a href="#" class="text-decoration-none"
+                      >http://gr2m.github.io/moment-parseformat/</a
+                    >
+                    for more formats.
+                  </li>
+                  <li>
+                    The response format will be JSON having status, message and
+                    data key.
+                  </li>
+                </ul>
+                <code class="ms-3">
+                  <pre>
+                      {
+
+                        "message": "Successful",
+                        "status": 200,
+                        "data": {}
+                      }
+              </pre
+                  >
+                </code>
+              </div>
+              <div id="errors" style="height :600px">
+                <h5 class="sub-title errors">Error Codes</h5>
+                <p>
+                  When something is wrong with a request, the API will respond
+                  with a non-
+                  <a href="#" class="text-decoration-none">200</a> status code
+                  in the response. To help you better understand the problem,
+                  where possible, the API overloads a number of different error
+                  codes so your application logic has as much visibility as
+                  possible into what has gone wrong.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none">100</a> --
+                    PARAMETER_MISSING
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none">101</a> --
+                    INVALID_KEY
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none">200</a> --
+                    ACTION_COMPLETE
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none">201</a> --
+                    SHOW_ERROR_MESSAGE
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none">404</a> --
+                    ERROR_IN_EXECUTION
+                  </li>
+                </ul>
+              </div>
+              <div id="timezones" style="height : 1600px">
+                <h5 class="sub-title">Timezones</h5>
+                <p class="mb-4">How are timezones handled in Tookan?</p>
+                <ul>
+                  <li class="mb-3 fs-5">
+                    Here is the link to find your timezone
+                  </li>
+                  <a href="#" class="text-decoration-none"
+                    >https://timezones.tookanapp.com</a
+                  >
+                  <li class="my-5 fs-5">In Dashboard</li>
+                  <p class="mb-2 dash-1">
+                    When a task is created from Tookan Dashboard the local time
+                    zone from where the task is being created is considered.
+                  </p>
+                  <p class="dash-2">
+                    Example: Let’s say a task is created in Singapore, the time
+                    zone considered is GMT +8hrs.
+                  </p>
+                  <li class="my-5 fs-5">In Bulk Upload</li>
+                  <p class="bulk">
+                    In the case of bulk upload of tasks, the time zone of the
+                    admin account is taken into consideration while tasks are
+                    created.
+                  </p>
+                  <p class="bulk">
+                    Example: Let’s say an admin in the US(say A for convenience)
+                    has created a manager(say M) in India. When this manager(M)
+                    creates tasks using the bulk upload the timezone of Admin(A)
+                    and tasks are created in US TimeZone.
+                  </p>
+                  <li class="my-5 fs-5">Using Tookan API</li>
+                  <p class="tokan">
+                    Tookan API accepts a request body parameter named “timezone”
+                    which is the Timezone difference with UTC in minutes. When a
+                    task is created with local time(say X), and timezone(+Y). Y
+                    minutes are added to X to make it UTC time.
+                  </p>
+                  <li class="my-5 fs-5">
+                    How to get the Timezone difference with UTC in minutes?
+                  </li>
+                  <p class="utc">
+                    Let’s say I am creating a task in India’s time which is five
+                    and half hours ahead of UTC time (+05:30), convert five and
+                    half hours into minutes i.e 330 minutes. Since India’s time
+                    is ahead of UTC time to convert it into UTC time 330 minutes
+                    has to be subtracted from it. So, timezone is -330.
+                  </p>
+                </ul>
+              </div>
+              <div id="task-status" style="height :2500px">
+                <h5 class="sub-title">Task Statuses</h5>
+                <p>
+                  Below mentioned are the values of the
+                  <a href="#" class="job-status text-decoration-none"
+                    >job_status</a
+                  >
+                  parameters of the respective Task Status:
+                </p>
+                <table class="w-100">
+                  <thead >
+                    <tr class=" w-100 d-flex text-center">
+                      <td class="fw-bold ">Status</td>
+                      <td class="fw-bold">Value</td>
+                      <td class="fw-bold">Description</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">Assigned</td>
+                      <td class=" text-center"><a href="#" class="zero">0</a></td>
+                      <td class="d-flex align-items-center">
+                        The task has been assigned to a agent.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">Started</td>
+                      <td class=" text-center"><a href="#" class="zero">1</a></td>
+                      <td class=" d-flex align-items-center  ">
+                        The task has been started and the agent is on the way.
+                        This will appear as a light-blue pin on the map and as a
+                        rectangle in the assigned category on the left.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class="text-center">Successful</td>
+                      <td class="text-center"><a href="#" class="zero">2</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task has been completed successfully and will appear
+                        as a green pin on the map and as a rectangle in the
+                        completed category on the left.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">Failed</td>
+                      <td class=" text-center"><a href="#" class="zero">3</a></td>
+                      <td class="   d-flex align-items-center ">
+                        The task has been completed unsuccessfully and will
+                        appear as red pin on the map and as a rectangle in the
+                        completed category on the left.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">InProgress/Arrived</td>
+                      <td class=" text-center"><a href="#" class="zero">4</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task is being performed and the agent has reached
+                        the destination. This will appear as a dark-blue pin on
+                        the map and as a rectangle in the assigned category on
+                        the left.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">Unassigned</td>
+                      <td class=" text-center"><a href="#" class="zero">6</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task has not been assigned to any agent and will
+                        appear as a grey pin on the map and as a rectangle in
+                        the unassigned category on the left.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between ">
+                      <td class=" text-center ">Accepted/Acknowledged</td>
+                      <td class=" text-center"><a href="#" class="zero">7</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task has been accepted by the agent which is
+                        assigned to him.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between">
+                      <td class="  text-center ">Decline</td>
+                      <td class="text-center"><a href="#" class="zero">8</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task has been declined by the agent which is
+                        assigned to him.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between">
+                      <td class="  text-center ">Cancel</td>
+                      <td class="   text-center"><a href="#" class="zero">9</a></td>
+                      <td class="  d-flex align-items-center ">
+                        The task has been cancelled by the agent which is
+                        accepted by him.
+                      </td>
+                    </tr>
+                    <tr class="d-flex justify-content-between">
+                      <td class="  text-center ">Deleted</td>
+                      <td class="   text-center"><a href="#" class="zero">10</a></td>
+                      <td class="  d-flex align-items-center ">
+                        When the task is deleted from the Dashboard.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="custom-fields" style="height :2300px">
+                <h5 class="sub-title">Custom Fields</h5>
+                <p>
+                  We support a variety of Custom Fields/Data Types which you can
+                  create and manage from the Templates section from your Tookan
+                  Dashboard. As described below, you can utilize the "meta_data"
+                  key in the /create_task API calls, to send custom data for
+                  each task. "meta_data" or "pickup_meta_data" key should be
+                  detailed as follows -
+                </p>
+                <ol>
+                  <li>
+                    Array of Objects, where each Object consists of two keys -
+                    "label" - which is the name of the custom field key, as
+                    shown in the template settings page and "data" with the
+                    value of that key. Both the keys should be of string Data
+                    Type. For ex -
+                  </li>
+                  <code>
+                    <pre class="mt-3">
+                      [{
+                        "label": "Price",
+                        "data":"10"
+                      }]
+                    </pre>
+                  </code>
+                  <li>
+                    All the Custom Field Data Types work in the similar fashion,
+                    except the following -
+                  </li>
+                  <ol type="a">
+                    <li>Checklist</li>
+                    <code>
+                      <pre>
+                {
+                    "label": "PackageType",
+                    "data":"A,B,C"
+                }
+                      </pre>
+                    </code>
+                    <p style="margin-left: -21px">
+                      comma separated values that you want to display in task
+                      details. If you skip the "label" or "data" key, it will
+                      populate the checklist as per the template settings.
+                    </p>
+                    <li>Tables</li>
+                    <code>
+                      <pre>
+              {
+                  "label": "DeliveryDetails",
+                  "data":[
+                      ["car","123"],
+                      ["bike","234"],
+                      ["scooter","456"]
+                  ]
+              }
+                      </pre>
+                    </code>
+                    <p style="margin-left: -21px">
+                      data key should be a 2D Array, with the number of each
+                      element in the parent array are different rows and each
+                      element in the child arrays are values of each key, as per
+                      your template table settings. If you send different number
+                      of elements in any particular row, then the complete row
+                      will be ignored. For sending the location datatype within
+                      a table, you can send the value in the following format -
+                    </p>
+                    <code>
+                      <pre>
+              {
+                  lat" :"22.44",
+                  "lng":"34.4555",
+                  "add":"srilanka"
+              }
+                  </pre
+                      >
+                    </code>
+                    <p>So, in this case, a sample row would look like this -</p>
+                    <code>
+                      <pre>
+              [
+                  "car",
+                  "123", 
+                  { 
+                      "lat":"22.44", 
+                      "lng":"34.4555", 
+                      "add":"srilanka 
+                  }
+              ]
+                      </pre>
+                    </code>
+                    <li>Barcode Verification</li>
+                    <code>
+                      <pre>
+              { 
+                "label":"barode_custom_field", 
+                "data":[ 
+                    { 
+                        "display_name":"Barcode1", 
+                        "data":"data1", 
+                        "is_verified":0 
+                    }, 
+                    { 
+                        "display_name":"Barcode2", 
+                        "data":"data2", 
+                        "is_verified":1 
+                    } 
+                ] 
+                }
+                      </pre>
+                    </code>
+                    <p style="margin-left: -65px;">
+                      You can pass the array of objects and each object should
+                      contains these keys and act as a one barcode value.
+                    </p>
+                    <p style="margin-left: -65px;">
+                      If you have any questions regarding Custom Fields, you can
+                      reach out to us, with your questions on
+                      support@tookanapp.com
+                    </p>
+                  </ol>
+                </ol>
+              </div>
+              <div id="npm-module" style="height : 200px">
+                <h5 class="sub-title">NPM Module</h5>
+                <p>Refer to Tookan's NPM Module <a href="#" class="tokan-link text-decoration-none fw-bold">tookan-api</a> to directly access tookan's APIs.</p>
+              </div>
+              <!-- end introduction -->
+              <div id="ref" class="sub-title">
+                <h4 class="green text-uppercase">Reference</h4>
+                <div id="task-title" style="height : 4000px">
+                  <h1 class=" mb-3 header-title">Task</h1>
+                  <div id="create-task" style="height: 4590px;">
+                    <h5>Create Task</h5>
+                    <p>There are different types of tasks can be created inside Tookan depending on the workflow you have selected in your account for e.g. - pick & delivery task, appointment task etc. Please refer to appropriate API below according to your requirement. In case of any doubt, feel free to reach out to us at contact@tookanapp.com.</p>
+                    <div class="pickup-task" style="height : 5000px ; cursor : pointer">
+                      <h5 class="task-sub-header">
+                        Create a Pickup Task
+                      </h5>
+                      <p class="mb-3">
+                        This API is used to create a pickup task. <br>
+                        Request Body Parameters:
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">api_key</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              You can generate a key from settings(Login>Menu><br> Settings>APIKeys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">order_id</td>
+                            <td class="">string</td>
+                            <td class="">
+                              Your can pass this key as your own transaction number which can be used to identify tasks in tookan
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_description</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              The description of the task to be done
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_phone</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              The contact number of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_name</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The name of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_email</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The email of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_address*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              The address from which the pickup should be collected.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_latitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_longitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the longitude of the pickup location
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_datetime*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is time before which the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_datetime*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is time before which the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For a Pickup task, this is fixed to <a href="#">1</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For a Pickup task this is fixed to <a href="#">0</a>
+                            </td>
+                          </tr >
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">integer <br> (Fixed)</td>
+                            <td class="   ">
+                              For a Pickup task this is fixed to <a href="#">0</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">tracking_link</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> it will return a url in the response where the driver's movement can be tracked.if not no url will be returned
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone difference with UTC in minutes for e.g., For PST: <a href="#">+480</a> (PDT: <a href="#"> +420</a>),For MST <a href="#">+420</a> (MDT: <a href="#">+360</a>) for EST: <a href="#">+300</a>(EDT: <a href="#">+240</a>), for AEST: <a href="#">-600</a>  (AEDT: <a href="#"> -660</a>), for IST: <a href="#">-330</a>, for CST: <a href="#">+360 </a> (CDT: <a href="#">+300</a>)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_meta_data</td>
+                            <td class=" ">json <br> array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">team_id</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is unique agent id given to each agent, if given the task will be assigned to the respective agent. You can get it from dashboard Menu>More>agents.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">p_ref_images</td>
+                            <td class=" ">Array</td>
+                            <td class="   ">
+                              This is an array of strings containing links of images.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">notify</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the notifications.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">Barcode</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Use this key to add Barcode to the Task</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  
+                      <!-- <h5 class="task-sub-header">
+                        Create a Delivery Task
+                      </h5>
+                      <p class="mb-3">
+                        This API is used to create a Delivery task. <br>
+                        Request Body Parameters:
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">api_key</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              You can generate a key from settings(Login>Menu><br> Settings>APIKeys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">order_id</td>
+                            <td class="">string</td>
+                            <td class="">
+                              Your can pass this key as your own transaction number which can be used to identify tasks in tookan
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_description</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              The description of the task to be done
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">customer_email</td>
+                            <td class="">email <br> (optional)</td>
+                            <td class="">
+                              This is email of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_username</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the name of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_phone</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the address of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location if you have it. Otherwise leave it blank. We will get it through geocoding API
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">longitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location if you have it. Otherwise leave it blank. We will get it through geocoding API
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">	boolean <br>(Fixed)</td>
+                            <td class="   ">
+                              For a delivery task this value is <a href="#">0</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean <br>(Fixed)</td>
+                            <td class="   ">
+                              For a delivery task this value is <a href="#">1</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">tracking_link</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> it will return a url in the respone where the driver's movement can be tracked.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone difference with UTC in minutes for e.g., For PST: <a href="#">+480</a> (PDT: <a href="#"> +420</a>),For MST <a href="#">+420</a> (MDT: <a href="#">+360</a>) for EST: <a href="#">+300</a>(EDT: <a href="#">+240</a>), for AEST: <a href="#">-600</a>  (AEDT: <a href="#"> -660</a>), for IST: <a href="#">-330</a>, for CST: <a href="#">+360 </a> (CDT: <a href="#">+300</a>)                          </td>
+  
+                            </td>
+                          </tr >
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">integer <br> (Fixed)</td>
+                            <td class="   ">
+                              For a Pickup task this is fixed to <a href="#">0</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">tracking_link</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> it will return a url in the response where the driver's movement can be tracked.if not no url will be returned
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone difference with UTC in minutes for e.g., For PST: <a href="#">+480</a> (PDT: <a href="#"> +420</a>),For MST <a href="#">+420</a> (MDT: <a href="#">+360</a>) for EST: <a href="#">+300</a>(EDT: <a href="#">+240</a>), for AEST: <a href="#">-600</a>  (AEDT: <a href="#"> -660</a>), for IST: <a href="#">-330</a>, for CST: <a href="#">+360 </a> (CDT: <a href="#">+300</a>)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">meta_data</td>
+                            <td class=" ">	json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">team_id</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is unique agent id given to each agent, if given the task will be assigned to the respective agent. You can get it from dashboard Menu>More>agents.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">ref_images</td>
+                            <td class=" ">Array</td>
+                            <td class="   ">
+                              This is an array of strings containing links of images.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">notify</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the notifications.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">Barcode</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Use this key to add Barcode to the Task</td>
+                          </tr>
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div> -->
+                    <!-- <div class="pickup-delivery-task" style="height : 1000px">
+                      <h5 class="task-sub-header">
+                        Create a Pickup and Delivery Task
+                      </h5>
+                      <p class="mb-3">
+                        This api is used to create Pickup and delivery task.<br>
+                        Request Body Parameters:
+                      
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">api_key</td>
+                            <td class="">string</td>
+                            <td class="">
+                              You can generate a key from settings(Login>Menu><br> Settings>API Keys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">order_id</td>
+                            <td class="">string</td>
+                            <td class="">
+                              Your can pass this key as your own transaction number which can be used to identify tasks in tookan
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">team_id</td>
+                            <td class="">integer</td>
+                            <td class="">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_description</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              The description of the task to be done
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">job_pickup_phone</td>
+                            <td class="">string</td>
+                            <td class="">
+                              The contact number of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_name</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The name of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_email</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The email of the person from whom the pickup should be collected                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_address*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              The address from which the pickup should be collected.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_latitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_longitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the longitude of the pickup location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_datetime*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is time before which the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_meta_data</td>
+                            <td class=" ">json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_email</td>
+                            <td class=" ">email <br> (optional)</td>
+                            <td class="   ">
+                              This is email of the customer to whom the product should be delivered
+                            </td>
+                          </tr >
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_username</td>
+                            <td class=" ">	String <br> (optional)</td>
+                            <td class="   ">
+                              This is the name of the customer to whom the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_phone</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the contact number of the customer to whom the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_address*</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the address of the customer to whom the product should be delivered                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the delivery location                      
+                       
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">longitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the longitude of the delivery location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).</td> 
+                         </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">meta_data</td>
+                            <td class=" ">json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)</td> 
+                          </tr>                      
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For an appointment task this value is fixed to <a href="#">0</a></td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For an appointment task this value is fixed to <a href="#">0</a></td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">number <br> (Fixed)</td>
+                            <td class="   ">
+                              For an field workforce task this value is fixed to <a href="#">2</a></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between text-center">
+                              <td class="">tracking_link</td>
+                              <td class="">boolean</td>
+                              <td class="">
+                                If this value is <a href="#">1</a> it will return a url in the respone where the driver's movement can be tracked</td>
+                            </tr>
+                            <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">team_id</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td> 
+                           </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1 </a>The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is unique agent id given to each agent, if given the task will be assigned to the respective agent. You can get it from dashboard Menu>More>agents.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">ref_images</td>
+                            <td class=" ">Array</td>
+                            <td class="   ">
+                              This is an array of strings containing links of images.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">notify</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the notifications.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                         
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >ride_type</td>
+                            <td >number</td>
+                            <td >
+                              0 for Non-Pool Task, 1 for Pool Task.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>Response Body Parameters :</p>
+                      <table class="w-100 mb-5">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">Name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">message</td>
+                            <td class="border-0" >string</td>
+                            <td class="">
+                              
+                            
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">status</td>
+                            <td class="">number</td>
+                            <td class="">
+                              This should be mapped with the error codes mention in error codes section above.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">data</td>
+                            <td class="">Object</td>
+                            <td class="">
+                              This gives the information <br> about the task like pickup_tracking_link, <br>delivery_tracing_link,job <br>_id, job_token, pickup_hash, delivery_hash
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                    </div>  -->
+                  </div>
+                  <div id="create-mul-tasks" style="height : 4000px">
+                    <h5>Create Multiple Tasks</h5>
+                    <div class="pickup-task" style="height : 4000px ; cursor: pointer">
+                      <h5 class="task-sub-header">
+                        Create Multiple Pickup And Delivery Tasks
+                      </h5>
+                      <p class="mb-3">
+                        This API is used to create multiple pickup and delivery tasks for the fleets at once. <br>
+                        Request Body Parameters:
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">api_key</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              You can generate a key from settings(Login>Menu><br> Settings>APIKeys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class="">String</td>
+                            <td class="">
+                              Id of the fleet to which this task is to be assigned, optional.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone of the country or location in numerical format. Eg - timezone for India = -330.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              Boolean key containing 1 if these are pickup tasks.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              Boolean key containing 1 if these are delivery tasks.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Set it as 0 (PICKUP_AND_DELIVERY), 1 (APPOINTMENT) or 2 (FOS) depending upon the type of layout.                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                       
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">delivers</td>
+                            <td class=" ">JSON array</td>
+                            <td class="   ">
+                              Array of objects containing address, name, job_description, latitude, longitude, time, phone, template_name, template_data, ref_images, email, order_id where address defines the address from which the pickup should be collected, name defines the name of the person from whom the pickup should be collected, job_description defines the description of the task to be done, latitude and longitude defines the lat and long of the pick up location, time defines the time before which the pickup should be collected,phone defines the contact number of the person from whom the pickup should be collected,template_name defines the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_), template_data defines an array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.),ref_images defines an array of strings containing links of images,email defines the email of the person from whom the pickup should be collected,order_id can be passed as your own transaction number which can be used to identify tasks in tookan.</td>
+                          </tr>
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickups*</td>
+                            <td class=" ">JSON array</td>
+                            <td class="   ">
+                              Array of objects containing address, name, job_description, latitude, longitude, time, phone, template_name, template_data, ref_images, email, order_id where address defines the address from which the pickup should be collected, name defines the name of the person from whom the pickup should be collected, job_description defines the description of the task to be done, latitude and longitude defines the lat and long of the pick up location, time defines the time before which the pickup should be collected,phone defines the contact number of the person from whom the pickup should be collected,template_name defines the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_), template_data defines an array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.),ref_images defines an array of strings containing links of images,email defines the email of the person from whom the pickup should be collected,order_id can be passed as your own transaction number which can be used to identify tasks in tookan.</td>
+                          </tr>
+                         
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                  
+                      <!-- <h5 class="task-sub-header">
+                        Create Multiple Pickup Tasks
+                      </h5>
+                      <p class="mb-3">
+                        This API is used to create multiple pickup tasks for the fleets at once. <br>
+                        Request Body Parameters:
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">api_key</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              You can generate a key from settings(Login>Menu><br> Settings>APIKeys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">order_id</td>
+                            <td class="">string</td>
+                            <td class="">
+                              Your can pass this key as your own transaction number which can be used to identify tasks in tookan
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_description</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              The description of the task to be done
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">customer_email</td>
+                            <td class="">email <br> (optional)</td>
+                            <td class="">
+                              This is email of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_username</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the name of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_phone</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the address of the customer to whom the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location if you have it. Otherwise leave it blank. We will get it through geocoding API
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">longitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location if you have it. Otherwise leave it blank. We will get it through geocoding API
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">	boolean <br>(Fixed)</td>
+                            <td class="   ">
+                              For a delivery task this value is <a href="#">0</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean <br>(Fixed)</td>
+                            <td class="   ">
+                              For a delivery task this value is <a href="#">1</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">tracking_link</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> it will return a url in the respone where the driver's movement can be tracked.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone difference with UTC in minutes for e.g., For PST: <a href="#">+480</a> (PDT: <a href="#"> +420</a>),For MST <a href="#">+420</a> (MDT: <a href="#">+360</a>) for EST: <a href="#">+300</a>(EDT: <a href="#">+240</a>), for AEST: <a href="#">-600</a>  (AEDT: <a href="#"> -660</a>), for IST: <a href="#">-330</a>, for CST: <a href="#">+360 </a> (CDT: <a href="#">+300</a>)                          </td>
+  
+                            </td>
+                          </tr >
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">integer <br> (Fixed)</td>
+                            <td class="   ">
+                              For a Pickup task this is fixed to <a href="#">0</a>
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">tracking_link</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> it will return a url in the response where the driver's movement can be tracked.if not no url will be returned
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">timezone*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Timezone difference with UTC in minutes for e.g., For PST: <a href="#">+480</a> (PDT: <a href="#"> +420</a>),For MST <a href="#">+420</a> (MDT: <a href="#">+360</a>) for EST: <a href="#">+300</a>(EDT: <a href="#">+240</a>), for AEST: <a href="#">-600</a>  (AEDT: <a href="#"> -660</a>), for IST: <a href="#">-330</a>, for CST: <a href="#">+360 </a> (CDT: <a href="#">+300</a>)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">meta_data</td>
+                            <td class=" ">	json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">team_id</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is unique agent id given to each agent, if given the task will be assigned to the respective agent. You can get it from dashboard Menu>More>agents.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">ref_images</td>
+                            <td class=" ">Array</td>
+                            <td class="   ">
+                              This is an array of strings containing links of images.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">notify</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the notifications.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">Barcode</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              Use this key to add Barcode to the Task</td>
+                          </tr>
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                        </tbody>
+                      </table> -->
+                    </div>
+                    <!-- <div class="pickup-delivery-task" style="height : 1000px ; margin-top: -907px;">
+                      <h5 class="task-sub-header">
+                        Create a Pickup and Delivery Task
+                      </h5>
+                      <p class="mb-3">
+                        This api is used to create Pickup and delivery task.<br>
+                        Request Body Parameters:
+                      
+                      </p>
+                      <table class="w-100">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">api_key</td>
+                            <td class="">string</td>
+                            <td class="">
+                              You can generate a key from settings(Login>Menu><br> Settings>API Keys) in your tookan account.
+                              Or click here to get API key
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">order_id</td>
+                            <td class="">string</td>
+                            <td class="">
+                              Your can pass this key as your own transaction number which can be used to identify tasks in tookan
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">team_id</td>
+                            <td class="">integer</td>
+                            <td class="">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1</a> The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_description</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              The description of the task to be done
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">job_pickup_phone</td>
+                            <td class="">string</td>
+                            <td class="">
+                              The contact number of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_name</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The name of the person from whom the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_email</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              The email of the person from whom the pickup should be collected                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_address*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              The address from which the pickup should be collected.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_latitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the pickup location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_longitude</td>
+                            <td class=" ">string <br> (optional)</td>
+                            <td class="   ">
+                              This is the longitude of the pickup location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_pickup_datetime*</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is time before which the pickup should be collected
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">pickup_meta_data</td>
+                            <td class=" ">json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)                          </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_email</td>
+                            <td class=" ">email <br> (optional)</td>
+                            <td class="   ">
+                              This is email of the customer to whom the product should be delivered
+                            </td>
+                          </tr >
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_username</td>
+                            <td class=" ">	String <br> (optional)</td>
+                            <td class="   ">
+                              This is the name of the customer to whom the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_phone</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the contact number of the customer to whom the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">customer_address*</td>
+                            <td class=" ">String</td>
+                            <td class="   ">
+                              This is the address of the customer to whom the product should be delivered                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).                        </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">latitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the latitiude of the delivery location                      
+                       
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">longitude</td>
+                            <td class=" ">String <br> (optional)</td>
+                            <td class="   ">
+                              This is the longitude of the delivery location</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">job_delivery_datetime*</td>
+                            <td class=" ">Date/ <br> String</td>
+                            <td class="   ">
+                              This is time before which the product should be delivered</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">custom_field_template</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is the custom fields template name that is pre-defined in your workflow page in the admin account and you just need to replace space in template with underscore(_).</td> 
+                         </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">meta_data</td>
+                            <td class=" ">json array</td>
+                            <td class="   ">
+                              This is array of object containing label and data where label defines the custom field name and data will be his value.(Provided label should be in specified template.)</td> 
+                          </tr>                      
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_pickup*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For an appointment task this value is fixed to <a href="#">0</a></td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">has_delivery*</td>
+                            <td class=" ">boolean <br> (Fixed)</td>
+                            <td class="   ">
+                              For an appointment task this value is fixed to <a href="#">0</a></td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">layout_type*</td>
+                            <td class=" ">number <br> (Fixed)</td>
+                            <td class="   ">
+                              For an field workforce task this value is fixed to <a href="#">2</a></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between text-center">
+                              <td class="">tracking_link</td>
+                              <td class="">boolean</td>
+                              <td class="">
+                                If this value is <a href="#">1</a> it will return a url in the respone where the driver's movement can be tracked</td>
+                            </tr>
+                            <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">team_id</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is the Unique id of every team. You can get it from the dashBoard. More>teams>respective id of the team will displayed.
+                            </td> 
+                           </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">auto_assignment</td>
+                            <td class=" ">boolean</td>
+                            <td class="   ">
+                              If this value is <a href="#">1 </a>The task will be auto assigned to the members of the specific team mentioned. or if this value is <a href="#">0</a> it will be unassigned task created.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">fleet_id</td>
+                            <td class=" ">string</td>
+                            <td class="   ">
+                              This is unique agent id given to each agent, if given the task will be assigned to the respective agent. You can get it from dashboard Menu>More>agents.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">ref_images</td>
+                            <td class=" ">Array</td>
+                            <td class="   ">
+                              This is an array of strings containing links of images.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">notify</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the notifications.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">geofence</td>
+                            <td class=" ">integer</td>
+                            <td class="   ">
+                              This is used to enable the geofencing.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td>ignore_customer_lat_long</td>
+                            <td >integer</td>
+                            <td >
+                              This is used to add address sent in request body otherwise tookan fetch customer by phone number saved in tookan database and use that customer adddress .                          </td>
+                          </tr>
+                         
+                         
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >tags</td>
+                            <td >string</td>
+                            <td >
+                              This is a string containing comma separated tags as filters for agents in auto assignment.</td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td >ride_type</td>
+                            <td >number</td>
+                            <td >
+                              0 for Non-Pool Task, 1 for Pool Task.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>Response Body Parameters :</p>
+                      <table class="w-100 mb-5">
+                        <thead>
+                          <tr class="w-100 d-flex text-center">
+                            <td class="fw-bold">Name</td>
+                            <td class="fw-bold">Type</td>
+                            <td class="fw-bold">Description</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">message</td>
+                            <td class="border-0" >string</td>
+                            <td class="">
+                              
+                            
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="">status</td>
+                            <td class="">number</td>
+                            <td class="">
+                              This should be mapped with the error codes mention in error codes section above.
+                            </td>
+                          </tr>
+                          <tr class="d-flex justify-content-between text-center">
+                            <td class="  ">data</td>
+                            <td class="">Object</td>
+                            <td class="">
+                              This gives the information <br> about the task like pickup_tracking_link, <br>delivery_tracing_link,job <br>_id, job_token, pickup_hash, delivery_hash
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                    </div>  -->
+                  </div>
+                 
+                  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+        <div class=" col-4 col-md-4   console ms-auto h-100 position-fixed end-0  d-lg-block z-1 ">
+          <div class="d-flex justify-content-between align-items-start  p-5 ">
+            <p class="close position-relative"></p>
+            <p class="position-relative switch">Switch to Console</p>
+          </div>
+          <div class="console-ui  position-relative">
+             
+              <code>
+                <pre>
+                      {
+                                    
+                                    "current_page": 1, 
+                                    "data": [
+                                  
+                                        {
+                                        "id": 57,
+                                        "tags": null,
+                                        "description": "description",
+                                        "order_id": "2322123221",
+                                        "type": "pickup",
+                                        "cod": 1,
+                                        "amount": 250,
+                                        "pickup_lat": 24.751961,
+                                        "pickup_lng": 46.794087,
+                                        "pickup_address": "Pickup Location Description",
+                                        "pickup_name": "Name",
+                                        "pickup_phone": "000000000",
+                                        "drop_lat": null,
+                                        "drop_lng": null,
+                                        "drop_address": null,
+                                        "drop_name": null,
+                                        "drop_phone": null,
+                                        "pickup_before": null,
+                                        "deliver_before": null,
+                                        "status": "unassigned",
+                                        "delivered_at": null,
+                                        "account_id": 1,
+                                        "team_id": null,
+                                        "agent_id": null,
+                                        "created_at": "2023-08-19T15:29:41.000000Z",
+                                        "updated_at": "2023-08-19T15:29:41.000000Z",
+                                        "picked_at": null
+                                        }
+                                    ],
+                                    "first_page_url": "https://api.turn-sa.net/api/v1/tasks/all?page=1",
+                                    "from": 1,
+                                    "next_page_url": null,
+                                    "path": "https://api.turn-sa.net/api/v1/tasks/all",
+                                    "per_page": 15,
+                                    "prev_page_url": null,
+                                    "to": 7
+                            }
+        </pre>
+              </code>
+          
+           
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap.bundle.min.js.map"></script>
+    <script src="./app.js"></script>
+
+  </body>
+</html>

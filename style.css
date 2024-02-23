@@ -1,0 +1,337 @@
+.content .row #errors a, .content .row #task-status .job-status, .content .row div#task-status table tbody tr a, .content .row div#task-title table tbody tr a {
+  color: #584773;
+  background-color: #fafafc;
+  border: 1px solid #e3e4e7;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.content div:nth-child(2) > .header-title {
+  color: var(--dark-color);
+  border-bottom: 1px solid #c1c6d1;
+}
+
+.content #task-title .pickup-task .task-sub-header, .content #task-title .delivery-task .task-sub-header, .content #task-title .pickup-delivery-task .task-sub-header, .content #task-title .appointment-task .task-sub-header {
+  color: #3C4151;
+  background-color: #f3f4f6;
+  border-left: 5px solid #59abfd;
+  padding-left: 30px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+/* general rules*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #3c4151;
+  --nav-link: #5D6576;
+}
+
+pre {
+  overflow: hidden;
+}
+
+.green {
+  color: #7ccfaf;
+}
+
+/*  start header in small screens*/
+.header-in-small {
+  height: 80px;
+  background-color: fff;
+  border: 1px solid #e6e8ec;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+}
+.header-in-small svg {
+  cursor: pointer;
+}
+
+/* start header */
+.header {
+  background-color: #4c5264;
+}
+.header .row > .img {
+  border-right: 1px solid #959cad;
+}
+.header .row > div:nth-child(2) > div {
+  border-right: 1px solid #959cad;
+}
+.header .row > div:nth-child(2) > div h5 {
+  color: #fff;
+}
+.header .row > div:nth-child(2) > div p {
+  width: 150px;
+}
+.header .row > div:nth-child(2) > div p span:nth-child(2) {
+  background-color: #959cad;
+  width: 5px;
+  height: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header .row > div:nth-child(2) > div p > span {
+  color: #959cad;
+}
+.header .row > div:nth-child(3) {
+  border-right: 1px solid #959cad;
+}
+.header .row > div:nth-child(3) p {
+  width: 100px;
+}
+.header .row > div:nth-child(3) p span:first-child {
+  color: #fff;
+}
+.header .row > div:nth-child(3) p span:last-child {
+  color: #959cad;
+  margin-left: 20px;
+}
+.header .row > div:nth-child(3) p span:last-child:hover {
+  color: #fff;
+}
+.header .row > div:last-child .sign-in h5 {
+  color: #fff;
+}
+.header .row > div:last-child .sign-in p {
+  color: #959cad;
+}
+.header .row > div:last-child .sign-in p a {
+  color: #6cf;
+}
+.header .row > div:last-child .help {
+  bottom: -100px;
+  left: 0;
+  width: 80px;
+  height: 26px;
+  background-color: #656d7e;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  line-height: 26px;
+}
+.header .row > div:last-child .arrow {
+  bottom: -82px;
+  background-color: #656d7e;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 37px;
+}
+.header .row > div:last-child .api-info {
+  bottom: -104px;
+  left: -137px;
+  width: 300px;
+  height: 200%;
+  padding: 10px;
+}
+.header .row > div:last-child .api-info ul {
+  height: 150px;
+  background-color: #656d7e;
+}
+.header .row > div:last-child .api-info ul li {
+  padding: 0 0 30px 10px;
+  height: 50px;
+}
+.header .row > div:last-child .api-info ul li:not(:last-child) {
+  border-bottom: 1px solid #959cad;
+}
+.header .row > div:last-child .api-info ul li a {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .header .row > .sign-in {
+    position: relative;
+    left: 120px;
+  }
+}
+
+/* End header*/
+/* start content */
+@media (max-width: 991px) {
+  .content {
+    margin-top: 20px !important;
+  }
+  .content .details {
+    margin-top: 100px !important;
+  }
+  .content .sidebar {
+    background-color: #f0f1f4;
+  }
+}
+.content .links a {
+  color: var(--dark-color);
+}
+.content div:nth-child(2) div {
+  margin-top: 50px;
+}
+.content div:nth-child(2) div > ul li > a {
+  border-bottom: 1px solid #c4c6ca;
+  color: #3b4151;
+}
+.content div:nth-child(2) .sub-title {
+  color: var(--dark-color);
+}
+.content .row {
+  color: #3b4151;
+}
+.content .row .head {
+  color: var(--nav-link);
+  font-weight: 100;
+}
+.content .row .nav-pills .nav-link.active {
+  color: #3C4151 !important;
+  background-color: transparent !important;
+  font-weight: bold;
+}
+.content .row .border-active {
+  position: relative;
+  left: -1px;
+  border-left: 1px solid #3C4151;
+  border-radius: 0;
+}
+.content .row code {
+  color: #584773;
+}
+.content .row #timezones {
+  color: #3b4151;
+}
+.content .row #timezones a {
+  border-bottom: 1px solid #c4c6ca;
+  color: #3b4151;
+  margin-left: -31px;
+}
+.content .row #timezones .dash-1, .content .row #timezones .dash-2, .content .row #timezones p.bulk, .content .row #timezones p.tokan, .content .row #timezones p.utc {
+  margin-left: -31px;
+}
+.content .row div#task-status table thead, .content .row div#task-title table thead {
+  border-top: 1px solid #e3e4e7;
+  border-bottom: 1px solid #e3e4e7;
+}
+.content .row div#task-status table thead tr, .content .row div#task-title table thead tr {
+  color: #3b4151;
+}
+.content .row div#task-status table thead tr td:first-child, .content .row div#task-title table thead tr td:first-child {
+  width: 45%;
+}
+.content .row div#task-status table thead tr td:nth-child(2), .content .row div#task-title table thead tr td:nth-child(2) {
+  width: 15%;
+}
+.content .row div#task-status table thead tr td:last-child, .content .row div#task-title table thead tr td:last-child {
+  width: 40%;
+}
+.content .row div#task-status table thead tr td:not(:last-child), .content .row div#task-title table thead tr td:not(:last-child) {
+  border-right: 1px dotted #e3e4e7;
+}
+.content .row div#task-status table tbody tr, .content .row div#task-title table tbody tr {
+  border-bottom: 1px solid #e3e4e7;
+}
+.content .row div#task-status table tbody tr td:first-child, .content .row div#task-title table tbody tr td:first-child {
+  width: 45%;
+}
+.content .row div#task-status table tbody tr td:nth-child(2), .content .row div#task-title table tbody tr td:nth-child(2) {
+  width: 15%;
+}
+.content .row div#task-status table tbody tr td:last-child, .content .row div#task-title table tbody tr td:last-child {
+  width: 40%;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.content .row div#task-status table tbody tr td:not(:last-child), .content .row div#task-title table tbody tr td:not(:last-child) {
+  border-right: 1px dotted #e3e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991px) {
+  .content .row #custom-fields {
+    height: 2300px !important;
+  }
+}
+.content .row #npm-module {
+  color: #3b4151;
+}
+.content .row #npm-module a {
+  color: #3b4151;
+  border-bottom: 1px solid #c4c6ca;
+}
+.content .console {
+  background-color: #2b2f3e;
+  cursor: pointer;
+  z-index: -1;
+  top: 108px;
+  left: 0;
+}
+.content .console.move-forward {
+  -webkit-transform: translateX(600%);
+          transform: translateX(600%);
+}
+@media (min-width: 1148px) {
+  .content .console {
+    top: 108px;
+  }
+}
+@media (max-width: 991px) {
+  .content .console {
+    -webkit-transform: translateX(900px);
+            transform: translateX(900px);
+    top: 0;
+  }
+  .content .console.move {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+.content .console .close {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content .console .close:after {
+  content: "X";
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.content .console .switch {
+  color: #dce0eb;
+  border: 2px solid #7ccfaf;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+.content .console .switch:hover {
+  border: 2px solid #fff;
+}
+.content .console .console-ui code {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 7px;
+}
+@media (max-width: 767px) {
+  .content .switch {
+    width: 155px;
+    white-space: nowrap;
+    margin-left: 17px;
+  }
+}
+
+/* end content*/
