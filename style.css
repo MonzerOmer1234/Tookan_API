@@ -1,4 +1,4 @@
-.content .row #errors a, .content .row #task-status .job-status, .content .row div#task-status table tbody tr a, .content .row div#task-title table tbody tr a {
+.content .row #errors a, .content .row #task-status .job-status, .content .row div#task-status table tbody tr a, .content .row #create-task table tbody tr a, .content .row #create-mul-tasks table tbody tr a {
   color: #584773;
   background-color: #fafafc;
   border: 1px solid #e3e4e7;
@@ -11,7 +11,7 @@
   border-bottom: 1px solid #c1c6d1;
 }
 
-.content #task-title .pickup-task .task-sub-header, .content #task-title .delivery-task .task-sub-header, .content #task-title .pickup-delivery-task .task-sub-header, .content #task-title .appointment-task .task-sub-header {
+.content .pickup-task .task-sub-header, .content .delivery-task .task-sub-header, .content .pickup-delivery-task .task-sub-header, .content .appointment-task .task-sub-header {
   color: #3C4151;
   background-color: #f3f4f6;
   border-left: 5px solid #59abfd;
@@ -46,6 +46,10 @@ pre {
   border: 1px solid #e6e8ec;
   -webkit-box-shadow: 0 0 10px #ddd;
           box-shadow: 0 0 10px #ddd;
+}
+.header-in-small.move-left {
+  position: relative !important;
+  left: 33.3333333333% !important;
 }
 .header-in-small svg {
   cursor: pointer;
@@ -103,8 +107,8 @@ pre {
   color: #6cf;
 }
 .header .row > div:last-child .help {
-  bottom: -100px;
-  left: 0;
+  bottom: -94px;
+  left: -42px;
   width: 80px;
   height: 26px;
   background-color: #656d7e;
@@ -114,17 +118,17 @@ pre {
   line-height: 26px;
 }
 .header .row > div:last-child .arrow {
-  bottom: -82px;
+  bottom: -73px;
   background-color: #656d7e;
   width: 10px;
   height: 10px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 37px;
+  left: -4px;
 }
 .header .row > div:last-child .api-info {
-  bottom: -104px;
-  left: -137px;
+  bottom: -98px;
+  left: -243px;
   width: 300px;
   height: 200%;
   padding: 10px;
@@ -156,11 +160,21 @@ pre {
   .content {
     margin-top: 20px !important;
   }
+  .content .intro a {
+    border-bottom: 1px solid #e7e8ea;
+    padding-bottom: 10px !important;
+    font-size: 14px;
+  }
+  .content .translate {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
   .content .details {
     margin-top: 100px !important;
   }
   .content .sidebar {
     background-color: #f0f1f4;
+    top: 0;
   }
 }
 .content .links a {
@@ -208,40 +222,55 @@ pre {
 .content .row #timezones .dash-1, .content .row #timezones .dash-2, .content .row #timezones p.bulk, .content .row #timezones p.tokan, .content .row #timezones p.utc {
   margin-left: -31px;
 }
-.content .row div#task-status table thead, .content .row div#task-title table thead {
+@media (max-width: 991px) {
+  .content .row #create-task {
+    height: 3000px !important;
+  }
+}
+@media (max-width: 991px) {
+  .content .row div#task-status table, .content .row #create-task table, .content .row #create-mul-tasks table {
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .content .row div#task-status table, .content .row #create-task table, .content .row #create-mul-tasks table {
+    font-size: 10px;
+  }
+}
+.content .row div#task-status table thead, .content .row #create-task table thead, .content .row #create-mul-tasks table thead {
   border-top: 1px solid #e3e4e7;
   border-bottom: 1px solid #e3e4e7;
 }
-.content .row div#task-status table thead tr, .content .row div#task-title table thead tr {
+.content .row div#task-status table thead tr, .content .row #create-task table thead tr, .content .row #create-mul-tasks table thead tr {
   color: #3b4151;
 }
-.content .row div#task-status table thead tr td:first-child, .content .row div#task-title table thead tr td:first-child {
-  width: 45%;
-}
-.content .row div#task-status table thead tr td:nth-child(2), .content .row div#task-title table thead tr td:nth-child(2) {
-  width: 15%;
-}
-.content .row div#task-status table thead tr td:last-child, .content .row div#task-title table thead tr td:last-child {
+.content .row div#task-status table thead tr td:first-child, .content .row #create-task table thead tr td:first-child, .content .row #create-mul-tasks table thead tr td:first-child {
   width: 40%;
 }
-.content .row div#task-status table thead tr td:not(:last-child), .content .row div#task-title table thead tr td:not(:last-child) {
+.content .row div#task-status table thead tr td:nth-child(2), .content .row #create-task table thead tr td:nth-child(2), .content .row #create-mul-tasks table thead tr td:nth-child(2) {
+  width: 20%;
+}
+.content .row div#task-status table thead tr td:last-child, .content .row #create-task table thead tr td:last-child, .content .row #create-mul-tasks table thead tr td:last-child {
+  width: 40%;
+}
+.content .row div#task-status table thead tr td:not(:last-child), .content .row #create-task table thead tr td:not(:last-child), .content .row #create-mul-tasks table thead tr td:not(:last-child) {
   border-right: 1px dotted #e3e4e7;
 }
-.content .row div#task-status table tbody tr, .content .row div#task-title table tbody tr {
+.content .row div#task-status table tbody tr, .content .row #create-task table tbody tr, .content .row #create-mul-tasks table tbody tr {
   border-bottom: 1px solid #e3e4e7;
 }
-.content .row div#task-status table tbody tr td:first-child, .content .row div#task-title table tbody tr td:first-child {
-  width: 45%;
+.content .row div#task-status table tbody tr td:first-child, .content .row #create-task table tbody tr td:first-child, .content .row #create-mul-tasks table tbody tr td:first-child {
+  width: 40%;
 }
-.content .row div#task-status table tbody tr td:nth-child(2), .content .row div#task-title table tbody tr td:nth-child(2) {
-  width: 15%;
+.content .row div#task-status table tbody tr td:nth-child(2), .content .row #create-task table tbody tr td:nth-child(2), .content .row #create-mul-tasks table tbody tr td:nth-child(2) {
+  width: 20%;
 }
-.content .row div#task-status table tbody tr td:last-child, .content .row div#task-title table tbody tr td:last-child {
+.content .row div#task-status table tbody tr td:last-child, .content .row #create-task table tbody tr td:last-child, .content .row #create-mul-tasks table tbody tr td:last-child {
   width: 40%;
   padding-left: 10px;
   margin: 10px 0;
 }
-.content .row div#task-status table tbody tr td:not(:last-child), .content .row div#task-title table tbody tr td:not(:last-child) {
+.content .row div#task-status table tbody tr td:not(:last-child), .content .row #create-task table tbody tr td:not(:last-child), .content .row #create-mul-tasks table tbody tr td:not(:last-child) {
   border-right: 1px dotted #e3e4e7;
   display: -webkit-box;
   display: -ms-flexbox;

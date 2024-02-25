@@ -1,7 +1,7 @@
 // start js code of website
 // navigation bar js code
 let helpIconSVG = document.querySelector(".header .row > div:nth-child(4) svg");
-let pathHelp = document.querySelector(".path-help")
+let pathHelp = document.querySelector(".path-help");
 let helpDiv = document.querySelector(".help");
 let arrowDiv = document.querySelector(".arrow");
 let headerTitle = document.querySelector(".header-title");
@@ -28,36 +28,60 @@ let link = document.querySelector("span.link");
 let hyperLink = document.querySelector("span.hyper-link");
 let pickupTasks = document.querySelectorAll(".pickup-task h5");
 
-
-
 // start website in small screens
 
 burgerIcon.onclick = () => {
   word.classList.remove("d-none");
-  word.style.cssText = "position : relative ;left : 50% ; top : -30px"
-
-  sidebar.classList.remove("col-1");
-  sidebar.classList.add("col-4");
   sidebar.classList.toggle("d-none");
-  details.classList.remove("col-12");
-  details.classList.add("col-8", "offset-6");
-  pageContainer.style.width = "900px";
-  burgerIcon.style.cssText = `position : relative ; left : 40% ; top:10px`;
-   
-    for (let i = 0  ; i < headLinks.length ; i++){
-      headLinks.forEach(link=> {
-        link.onclick = ()=>{
-          sidebar.classList.add("d-none");
-          burgerIcon.style.cssText = "position :relative ; left : 0 ; top : 10px"
-        }
-      })
-    }
-  
-  
-  if (sidebar.classList.contains("d-none") ) {
-    details.classList.remove("offset-6");
-    details.classList.add("col-12");
-    burgerIcon.style.cssText = `position : relative ; left : 0 `;
+  sidebar.classList.toggle("col-1");
+  details.classList.toggle("col-12");
+
+  // sidebar.classList.add("col-4");
+  // details.classList.toggle("offset-4");
+  // details.classList.toggle("col-8");
+  // smallHeader.classList.toggle("move-left");
+  // smallHeader.classList.toggle("position-fixed")
+  for (let i = 0; i < headLinks.length; i++) {
+    headLinks.forEach((link) => {
+      link.onclick = () => {
+        sidebar.classList.add("d-none");
+        smallHeader.classList.toggle("move-left");
+        details.classList.toggle("offset-4");
+        details.classList.toggle("col-8");
+        details.classList.toggle("col-12");
+      };
+    });
+  }
+
+  if (sidebar.classList.contains("d-none")) {
+    smallHeader.classList.toggle("move-left");
+
+    details.classList.toggle("offset-4");
+    details.classList.toggle("col-12");
+    details.classList.toggle("col-8");
+  } else {
+    smallHeader.classList.toggle("move-left");
+    sidebar.classList.add("col-4");
+    details.classList.toggle("offset-4");
+    details.classList.toggle("col-8");
+    details.classList.toggle("col-12");
+    // content.classList.toggle("overflow-x-auto");
+    // content.addEventListener("wheel" , e=>{
+    //   content.scrollLeft += e.deltaY;
+
+    // })
+
+    content.style.cssText = " min-width: 50vw !important; min-height: 100vh;";
+
+    content.classList.toggle("overflow-x-auto");
+    content.addEventListener("wheel", (evt) => {
+      content.scrollLeft += evt.deltaY;
+      
+     ( !sidebar.classList.contains("d-none"))&& (sidebar.style.cssText = "transform : translateX(-100%)");
+     burgerIcon.addEventListener("click" , ()=>{
+      sidebar.style.cssText = "transform : translateX(0)"
+     })
+    });
   }
 };
 
@@ -68,46 +92,44 @@ window.addEventListener("scroll", () => {
       head.style.color = "#3b4151";
       rightArrow.classList.remove("d-none");
       link.innerHTML = head.innerHTML;
-      head.innerHTML === "Task" || head.innerHTML === "Create Task" ||head.innerHTML === "Create Multiple Tasks" ? (hyperLink.innerHTML = "Reference"): (hyperLink.innerHTML = "Introduction");
-      if(head.innerHTML === "Create Task" || head.innerHTML === "Create Multiple Tasks")  {
+      head.innerHTML === "Task" ||
+      head.innerHTML === "Create Task" ||
+      head.innerHTML === "Create Multiple Tasks"
+        ? (hyperLink.innerHTML = "Reference")
+        : (hyperLink.innerHTML = "Introduction");
+      if (
+        head.innerHTML === "Create Task" ||
+        head.innerHTML === "Create Multiple Tasks"
+      ) {
         link.innerHTML = `Task >  ${head.innerHTML}`;
+      }
     }
-  }
-})
+  });
 });
 // start appearing console in small screeens
 
-
-for(let i =0 ; i < pickupTasks.length ; i++){
-
-  pickupTasks[i].onclick = ()=>{
-   
-     consoleDiv.classList.toggle("move");
-  
-  
-  }
+for (let i = 0; i < pickupTasks.length; i++) {
+  pickupTasks[i].onclick = () => {
+    consoleDiv.classList.toggle("move");
+  };
 }
-
 
 // appearing help div
 helpIconSVG.onmouseenter = () => {
   helpDiv.classList.remove("d-none");
-  pathHelp.setAttribute("fill" , "#718CFF");
+  pathHelp.setAttribute("fill", "#718CFF");
   arrowDiv.classList.remove("d-none");
   helpIconSVG.addEventListener("click", () => {
     helpDiv.classList.add("d-none");
     arrowDiv.classList.add("d-none");
     apiInfo.classList.add("d-none");
-    pathHelp.setAttribute("fill" , "#6D73A9");
-   
+    pathHelp.setAttribute("fill", "#6D73A9");
   });
 };
 
 // appearing api info
 helpDiv.onclick = () => {
   apiInfo.classList.remove("d-none");
-
-
 };
 
 // head active and sub-head active
@@ -147,7 +169,9 @@ window.onscroll = () =>
 
 close.onclick = () => {
   // consoleDiv.style.cssText = "transform : translateX(900px) ; transition : 0.5s";
-  consoleDiv.classList.toggle("move")
-  consoleDiv.classList.toggle("move-forward")
-  details.style.cssText = " margin-left : 50% ; transition : 0.5s";
+  consoleDiv.classList.toggle("move");
+  consoleDiv.classList.toggle("move-forward");
+  // details.style.cssText = " margin-left : 50% ; transition : 0.5s";
+  details.classList.remove("col-lg-4");
+  details.classList.add("col-lg-5");
 };
