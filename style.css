@@ -50,6 +50,7 @@ pre {
 .header-in-small.move-left {
   position: relative !important;
   left: 33.3333333333% !important;
+  z-index: 1000;
 }
 .header-in-small svg {
   cursor: pointer;
