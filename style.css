@@ -164,6 +164,7 @@ pre {
     border-bottom: 1px solid #e7e8ea;
     padding-bottom: 10px !important;
     font-size: 14px;
+    width: 60%;
   }
   .content .translate {
     -webkit-transform: translateX(-30%);
