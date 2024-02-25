@@ -36,11 +36,7 @@ burgerIcon.onclick = () => {
   sidebar.classList.toggle("col-1");
   details.classList.toggle("col-12");
 
-  // sidebar.classList.add("col-4");
-  // details.classList.toggle("offset-4");
-  // details.classList.toggle("col-8");
-  // smallHeader.classList.toggle("move-left");
-  // smallHeader.classList.toggle("position-fixed")
+
   for (let i = 0; i < headLinks.length; i++) {
     headLinks.forEach((link) => {
       link.onclick = () => {
@@ -65,16 +61,12 @@ burgerIcon.onclick = () => {
     details.classList.toggle("offset-4");
     details.classList.toggle("col-8");
     details.classList.toggle("col-12");
-    // content.classList.toggle("overflow-x-auto");
-    // content.addEventListener("wheel" , e=>{
-    //   content.scrollLeft += e.deltaY;
-
-    // })
+   
 
     content.style.cssText = " min-width: 50vw !important; min-height: 100vh;";
 
     content.classList.toggle("overflow-x-auto");
-    content.addEventListener("wheel", (evt) => {
+    content.addEventListener("mousewheel", (evt) => {
       content.scrollLeft += evt.deltaY;
       
      ( !sidebar.classList.contains("d-none"))&& (sidebar.style.cssText = "transform : translateX(-100%)");
@@ -168,10 +160,10 @@ window.onscroll = () =>
 // start console side
 
 close.onclick = () => {
-  // consoleDiv.style.cssText = "transform : translateX(900px) ; transition : 0.5s";
+
   consoleDiv.classList.toggle("move");
   consoleDiv.classList.toggle("move-forward");
-  // details.style.cssText = " margin-left : 50% ; transition : 0.5s";
+
   details.classList.remove("col-lg-4");
   details.classList.add("col-lg-5");
 };
