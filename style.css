@@ -182,6 +182,11 @@ pre {
 .content .links a {
   color: var(--dark-color);
 }
+@media (min-width: 992px) {
+  .content .links {
+    width: 200px;
+  }
+}
 .content div:nth-child(2) div {
   margin-top: 50px;
 }
