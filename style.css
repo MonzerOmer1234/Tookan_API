@@ -218,6 +218,17 @@ pre {
 .content .row code {
   color: #584773;
 }
+@media (max-width: 330px) {
+  .content .row code {
+    display: block;
+    margin-left: -70px !important;
+  }
+}
+@media (max-width: 991px) {
+  .content .row #errors {
+    width: 600px;
+  }
+}
 .content .row #timezones {
   color: #3b4151;
 }
@@ -231,7 +242,7 @@ pre {
 }
 @media (max-width: 991px) {
   .content .row #create-task {
-    height: 3000px !important;
+    height: 4000px !important;
   }
 }
 @media (max-width: 991px) {
@@ -291,7 +302,7 @@ pre {
 }
 @media (max-width: 991px) {
   .content .row #custom-fields {
-    height: 2300px !important;
+    height: 2680px !important;
   }
 }
 .content .row #npm-module {
