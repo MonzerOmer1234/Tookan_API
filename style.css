@@ -226,7 +226,7 @@ pre {
 }
 @media (max-width: 991px) {
   .content .row #errors {
-    width: 600px;
+    height: 600px;
   }
 }
 .content .row #timezones {
