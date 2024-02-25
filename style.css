@@ -241,7 +241,7 @@ pre {
 }
 @media (min-width: 992px) {
   .content .row div#task-status table, .content .row #create-task table, .content .row #create-mul-tasks table {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 .content .row div#task-status table thead, .content .row #create-task table thead, .content .row #create-mul-tasks table thead {

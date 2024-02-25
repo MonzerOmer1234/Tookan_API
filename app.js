@@ -60,20 +60,20 @@ burgerIcon.onclick = () => {
     sidebar.classList.add("col-4");
     details.classList.toggle("offset-4");
     details.classList.toggle("col-8");
-    details.classList.toggle("col-12");
+    details.classList.remove("col-12");
    
 
-    content.style.cssText = " min-width: 50vw !important; min-height: 100vh;";
+    // content.style.cssText = " min-width: 50vw !important; min-height: 100vh;";
 
-    content.classList.toggle("overflow-x-auto");
-    document.addEventListener("mousewheel", (evt) => {
-      content.scrollLeft += evt.deltaY;
+    // content.classList.toggle("overflow-x-hidden");
+    // document.addEventListener("mousewheel", (evt) => {
+    //   content.scrollLeft += evt.deltaY;
       
-     ( !sidebar.classList.contains("d-none"))&& (sidebar.style.cssText = "transform : translateX(-100%)");
-     burgerIcon.addEventListener("click" , ()=>{
-      sidebar.style.cssText = "transform : translateX(0)"
-     })
-    });
+    //  ( !sidebar.classList.contains("d-none"))&& (sidebar.style.cssText = "transform : translateX(-100%)");
+    //  burgerIcon.addEventListener("click" , ()=>{
+    //   sidebar.style.cssText = "transform : translateX(0)"
+    //  })
+    // });
   }
 };
 
