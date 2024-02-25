@@ -66,7 +66,7 @@ burgerIcon.onclick = () => {
     content.style.cssText = " min-width: 50vw !important; min-height: 100vh;";
 
     content.classList.toggle("overflow-x-auto");
-    content.addEventListener("mousewheel", (evt) => {
+    document.addEventListener("mousewheel", (evt) => {
       content.scrollLeft += evt.deltaY;
       
      ( !sidebar.classList.contains("d-none"))&& (sidebar.style.cssText = "transform : translateX(-100%)");
